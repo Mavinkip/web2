@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Video Lightbox Example</title>
+	<style type="text/css">
+		.video-lightbox {
+			display: none;
+			position: fixed;
+			top: 0;
+			left: 0;
+			width: 100%;
+			height: 100%;
+			background-color: rgba(0, 0, 0, 0.5);
+			z-index: 999;
+			text-align: center;
+		}
+		.video-lightbox iframe {
+			margin-top: 10%;
+			width: 80%;
+			height: 60%;
+		}
+	</style>
+</head>
+<body>
+	<img src="img/hd.jpg" alt="vid/hd.mp4" onclick="openLightbox('vid/hd.mp4')" />
+	<div class="video-lightbox" onclick="closeLightbox()">
+		<iframe id="lightbox-video" frameborder="0" allowfullscreen></iframe>
+	</div>
+	
+	<script type="text/javascript">
+		function openLightbox(videoUrl) {
+			document.getElementById("lightbox-video").setAttribute("src", videoUrl);
+			document.querySelector(".video-lightbox").style.display = "block";
+		}
+		
+		function closeLightbox() {
+			document.getElementById("lightbox-video").setAttribute("src", "");
+			document.querySelector(".video-lightbox").style.display = "none";
+		}
+	</script>
+</body>
+</html>

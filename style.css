@@ -1,0 +1,288 @@
+*{
+    margin: 0;
+    box-sizing: border-box;
+}
+body{
+    background-color: rgb(15, 15, 15);
+    display: flex;
+    flex-direction: column;
+}
+header{
+    border: solid bllue;
+    display: flex;
+    flex-direction: row;
+    background-color: rgb(39, 35, 35);
+    flex-direction: column;
+    border-bottom: solid white;
+
+}
+nav{
+  display: flex;
+}
+nav ul{
+  border: solid whgite;
+  margin-left: 600px;
+    display: flex;
+    align-items: right;
+   justify-content: right;
+   
+
+}
+a:hover{
+    color: blue;
+}
+a:active{
+    color: blue;
+}
+li{
+    text-decoration: none;
+}
+ nav a{
+    text-align: center;
+    text-decoration: none;
+    color: beige;
+
+}
+nav li{
+    align-items: center;
+    display: inline-block;
+    margin:0 10px;
+    font-size: 50px;
+
+
+}
+.logo{
+    border: solid rued;
+    width: 10%;
+    height: 10%;
+}
+.logo img{
+    height: 100%;
+    width: 100%;
+    border-radius:50% ;
+}
+.tv{
+    border: solid tred;
+    display: flex;
+    flex-direction: row;
+    height: 100vh;
+    width: 95%;
+    margin: auto;
+}
+.t{
+    border: solid bllue;
+    height: 100%;
+    width: 80%;
+    align-items: center;
+    margin: auto;
+}
+.tv .v{
+    padding: 20px;
+    overflow: auto;
+    display: flex;
+    flex-direction: column;
+    border: solid black;
+    height: 100%;
+    width: 20%;
+}
+.big{
+    display: flex;
+    flex-direction: row;
+    border: solid blue;
+}
+h1{
+    text-align: center;
+    color: white;
+}
+
+
+.swiper {
+    width: 240px;
+    height: 820px;
+    align-items: right;
+    border:solid grreen;
+    margin-right:300;
+    padding-right: 73px;
+  }
+  .swiper-slide{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #fff;
+    border-radius: 8%;
+    border: solid rred;
+  }
+  .swiper-slide:nth-child(1n) {
+    background-image: url(img/img5.jpg);
+  }
+
+  .swiper-slide:nth-child(2n) {
+    background-image: url(img/img3.jpg);
+  }
+
+  .swiper-slide:nth-child(3n) {
+    background-image: url(img/courage.jpg);
+  }
+
+  .swiper-slide:nth-child(4n) {
+    background-image: url(img/img2.jpg);
+  }
+
+  .swiper-slide:nth-child(5n) {
+    background-image: url(img/img1.jpg);
+  }
+  .post{
+    align-items: center;
+    border: solid gryeen;
+    height: 70vh;
+    width: 98%;
+    display: flex;
+    margin: 2px;
+  }
+  .post .po{
+    height: 50vh;
+    width: 15%;
+    border: solid white;
+    margin: auto;
+    margin-bottom: 20px;
+    align-items: center;
+    transition: transform 0.3s;
+    border-radius: 10px;
+  }
+  .post .po img{
+    align-items: center;
+    width: 100%;
+    height: 100%;
+    border-radius: 10px;
+  }
+   .post .po:hover{
+    transform: translateY(-10px);
+  }
+  footer{
+    margin-top: 30px;
+    height: 50px;
+    border: solid blyue;
+    background-color: rgb(17, 16, 16);
+  }
+  .con{
+    border: solid rged;
+    height: 130vh;
+  }
+  .ser{
+    border: solid reyd;
+    height: 20vh;
+  }
+  .out{
+    border: solid reyd;
+    height: 70vh;
+  }
+  .flow{
+    border: solid rted;
+    display: flex;
+    flex-direction: row;
+    height: 70vh;
+    width: 100%;
+    
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+  }
+  .fl{
+    border: solid blgue;
+    width: 40%;
+
+  }
+  .ow{
+    border: solid grgeen;
+    width: 100%;
+    margin: 30px;
+  }
+  h2{
+    margin: 100px;
+    color:black;
+  }
+  button{
+    background: red;
+    color: white;
+    text-decoration: none;
+    font-size: 30px;
+    border-radius: 30px;
+    margin-left: 700px;
+    border: transparent;
+    transition: .4s;
+    
+
+  }
+  button:hover{
+    background-color: rgb(45, 31, 31);
+  }
+  .shel{
+    align-items: center;
+    display: flex;
+    flex-direction: row;
+    border: solid bblue;
+    height: 70vh;
+    align-items: center;
+    margin: 20px;
+    margin-bottom: 20px;
+  }
+  .shi{
+
+    margin-left: 300px}
+    .she{
+    border: solid gryeen;
+    height: 100%;
+    width: 30%;
+    border-radius: 20px;
+  
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: contain;
+  }
+  span{
+    color: red;
+  }
+  .shi img{
+    height: 100%;
+    width: 100%;
+    border-radius: 50%;
+  }
+
+  .she{
+    border: solid grreen;
+    height: 100%;
+    width: 30%;
+    border-radius: 20px;
+    margin: auto;
+   margin-left: 200px;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: contain;
+    border-radius: 50%;
+    
+  }
+  .she img{
+    height: 100%;
+    width: 100%;
+    border-radius: 50%;
+  }
+  .sh{
+    border: solid grteen;
+    height: 70%;
+    width: 50%;
+    transition: transform 0.3s;
+    border-radius: 20px;
+    margin: 15px;
+  }
+  .sh img{
+    border-radius: 20px;
+    height: 100%;
+    width: 100%;
+
+  }
+  .sh:hover{
+    transform: translateY(-10px);
+  }
+  .mute{
+    display: none;
+  }
