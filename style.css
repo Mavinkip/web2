@@ -143,7 +143,7 @@ h1{
     height: 50vh;
     width: 15%;
     border: solid white;
-    margin: auto;
+    margin: 5px;
     margin-bottom: 20px;
     align-items: center;
     transition: transform 0.3s;

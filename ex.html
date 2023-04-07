@@ -1,3 +1,318 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+   <meta charset="UTF-8">
+   <meta http-equiv="X-UA-Compatible" content="IE=edge">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.css"/>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="try.css">
+    <link rel="stylesheet" type="text/css" href="box/lightbox.min.css">
+    <script type="text/javascript" src="box/lightbox-plus-jquery.min.js"></script>
+    <script type="text/javascript" src="box v/js/videopopup.js" ></script>
+   
+
+</head>
+<body>
+   <header>
+      <nav>
+         <div class="logo">
+            <img src="logo.jpg">
+            <h1>Rewind</h1>
+          </div>
+        <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="abou.html">About</a></li>
+            <li><a href="Services.html">Services</a></li>
+            <li><a href="contact.html">Contact</a></li>
+        </ul>
+      </nav>
+
+    </header>
+            <h1>Time For  A Rewind
+            </h1>
+            <section class="carrd">
+               <div class="swiper mySwiper">
+                   <div class="swiper-wrapper">
+                     <div class="swiper-slide"><img src="" ><h1 class="h"></div>
+                     <div class="swiper-slide"><img src="" ><h1 class="h"></div>
+                     <div class="swiper-slide"><img src="" ><h1 class="h"></div>
+                     <div class="swiper-slide"><img src="" ><h1 class="h"> </div>
+                     <div class="swiper-slide"><img src="" > <h1 class="h"></div>
+                   </div>
+                 </div>
+           </section>
+           <script src="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.js"></script>
+           
+             <script>
+           var swiper = new Swiper(".mySwiper", {
+           autoplay:{
+               dilay:200,
+           },
+           
+           effect: "cards",
+           grabCursor: true,
+           });
+           </script>
+         
+<div class="container">
+            
+  <div class="vid" id="video">
+      <video width="100%" controls volme="0.1" autoplay id="myvid">
+     <source src="vid/pf.mp4">
+     <source src="vid/ssp.mp4" >
+     <source src="vid/B10.mp4">
+     <source src="vid/EEE.mp4">
+     <source src="vid/jb.mp4">
+     <source src="vid/ccd.mp4">
+      </video>
+  </div>
+  <div class="row">
+      <div class="col">
+       <div class="fet">
+          <video src="vid/ssp.mp4" muted controls muted width="100%" class="play" onclick = "playvideo('vid/ssp.mp4')">
+            <div class="wordt"> </div>
+       </div> 
+       <h1>Sponge Bob</h1>
+       <div class="fet">
+          <video src="vid/pf.mp4" muted controls muted width="100%" class="play" onclick = "playvideo('vid/pf.mp4')">
+          
+       </div> 
+       <h1>Phiness & Ferb</h1>
+       <div class="fet">
+          <video src="vid/B10.mp4" muted controls muted width="100%" class="play" onclick = "playvideo('vid/B10.mp4')">
+       </div> 
+       <h1>Ben Ten</h1>
+       <div class="fet">
+          <video src="vid/EEE.mp4" muted controls muted width="100%" class="play" onclick = "playvideo('vid/EEE.mp4')">
+       </div> 
+       <h1>Ed, Edd & Eddy</h1>
+       <div class="fet">
+          <video src="vid/jb.mp4" muted controls muted width="100%" class="play" onclick = "playvideo('vid/jb.mp4')">
+       </div> 
+       <h1>Jonny Bravo</h1>
+       <div class="fet">
+         <video src="vid/ccd.mp4" muted controls muted width="100%" class="play" onclick = "playvideo('vid/ccd.mp4')">
+      </div> 
+      <h1> Courage the  Corwardly Dog</h1>
+      </div>
+  </div>
+
+</div>
+
+<script>
+   var video = document.getElementById("video");
+   var myvid = document.getElementById("myvid");
+
+   function playvideo(file){
+      myvid.src = file;
+      video.style.display="block";
+   }
+</script>
+<h1>Shows</h1>
+<div class="post">
+   <div class="po">
+      <img src="img/hd.jpg" onclick="openLightbox('vid/hd.mp4')" />
+
+      
+   </div>
+   <div class="po">
+      <img src="img/sco.jpg" onclick="openLightbox('vid/sco.mp4')" />
+   </div>
+   <div class="po">
+      <img src="img/btr.jpg" onclick="openLightbox('vid/btr.mp4')" />
+   </div>
+   <div class="po">
+      <img src="img/i.jpg" onclick="openLightbox('vid/i.mp4')" />
+   </div>
+   <div class="po">
+      <img src="img/vic.jpg" onclick="openLightbox('vid/vic.mp4')" />
+   </div>
+</div>
+<style type="text/css">
+   .video-lightbox {
+      display: none;
+      position: fixed;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      background-color: rgba(0, 0, 0, 0.5);
+      z-index: 999;
+      text-align: center;
+   }
+   .video-lightbox iframe {
+      margin-top: 10%;
+      width: 80%;
+      height: 60%;
+   }
+</style>
+</head>
+<body>
+
+<div class="video-lightbox" onclick="closeLightbox()">
+   <iframe id="lightbox-video" frameborder="0" allowfullscreen></iframe>
+</div>
+
+<script type="text/javascript">
+   function openLightbox(videoUrl) {
+      document.getElementById("lightbox-video").setAttribute("src", videoUrl);
+      document.querySelector(".video-lightbox").style.display = "block";
+   }
+   
+   function closeLightbox() {
+      document.getElementById("lightbox-video").setAttribute("src", "");
+      document.querySelector(".video-lightbox").style.display = "none";
+   }
+</script>
+</body>
+<footer>
+   <h1>INTE/MG/0915/09/21</h1>
+   <h1>
+      
+      &copy; Mavin @ 2023
+   </h1>
+</footer>
+</html>
+*{
+    margin: 0;
+    box-sizing: border-box;
+}
+body{
+    background-color: rgb(40, 41, 41);
+}
+.container{
+    display: flex;
+    border: 10px solid wheat;
+    margin: 80px auto;
+    width: 1500px;
+    height: 700px;
+}
+.row{
+    overflow-y: scroll;
+    border: solid white;
+    display: flex;
+    align-items: center;
+    width: 30%;
+    height: 100%;
+}
+.col{
+    border: solid rggb(51, 51, 64);
+    flex-basis: 100%;
+    min-width: 300px;
+    width: 80px;
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    height: 100%;
+
+}
+
+.fet{
+    display: flex;
+    flex-direction: row;
+    border: solid grheen;
+    width: 100%;
+    margin: auto;
+    position: relative;
+    border-radius: 10px;
+    padding: 10px;
+    background: red;
+    gap: 10px;
+    margin-bottom: 30px;
+
+}
+.fet:hover{
+    background-color: blue;
+}
+.fet:active{
+    background-color: blue;
+}
+.fet h1{
+    text-align: center;
+    font-size: 50px;
+}
+.fet video{
+    
+    height: 100%;
+    width: 90%;
+}
+
+.vid{
+    width: 100%;
+    align-items: center;
+}
+.vid video{
+    width: 3000px;
+    height: 1000px ;
+    position: absolute;
+}
+video :focus{
+    outline: none;
+}
+
+
+.swiper {
+    margin-top: 50px;
+    width: 340px;
+    height: 420px;
+    align-items: right;
+    border:solid grreen;
+    margin-right:300;
+    padding-right: 73px;
+  }
+  .swiper-slide{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #fff;
+    border-radius: 8%;
+    border: solid rred;
+
+  }
+
+  .swiper-slide:nth-child(1n) {
+    background-image: url(img/img4.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-color: gray;
+    background-size:cover ;
+  }
+
+  .swiper-slide:nth-child(2n) {
+    background-image: url(img/img3.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-color: gray;
+    background-size:cover ;
+  }
+
+  .swiper-slide:nth-child(3n) {
+    background-image: url(img/img1.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-color: gray;
+    background-size:cover ;
+  }
+
+  .swiper-slide:nth-child(4n) {
+    background-image: url(img/courage.jpg);
+    background-position: center;
+    background-color: gray;
+    background-size: cover;
+    background-repeat: no-repeat;
+  }
+
+  .swiper-slide:nth-child(5n) {
+    background-image: url(img/img5.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-color: gray;
+    background-size:cover ;
+  }
+
+
 <html lang="en">
 <head>
     <meta charset="UTF-8">

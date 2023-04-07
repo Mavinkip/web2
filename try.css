@@ -6,44 +6,44 @@ body{
     background-color: rgb(40, 41, 41);
 }
 .container{
-    display: flex;
     border: 10px solid wheat;
     margin: 80px auto;
     width: 1500px;
-    height: 700px;
+    height: 850px;
 }
 .row{
-    overflow-y: scroll;
+    overflow-x: scroll;
     border: solid white;
     display: flex;
+    flex-direction: row;
     align-items: center;
-    width: 30%;
-    height: 100%;
+    width: 100%;
+    height: 60vh;
 }
 .col{
-    border: solid rggb(51, 51, 64);
+    border: solid rgb(10, 10, 207);
     flex-basis: 100%;
     min-width: 300px;
     width: 80px;
     display: flex;
-    flex-direction: column;
+    flex-direction:row;
     width: 100%;
-    height: 100%;
-
 }
 
 .fet{
     display: flex;
-    flex-direction: row;
-    border: solid grheen;
-    width: 100%;
-    margin: auto;
+    flex-direction: column;
+    border: solid green;
+    width: 300px;
+    height: 100%;
+    margin: 20px;
     position: relative;
     border-radius: 10px;
     padding: 10px;
     background: red;
     gap: 10px;
     margin-bottom: 30px;
+    overflow-x: auto;
 
 }
 .fet:hover{
@@ -56,7 +56,7 @@ body{
     text-align: center;
     font-size: 50px;
 }
-.fet video{
+.fet img{
     
     height: 100%;
     width: 90%;
@@ -67,8 +67,10 @@ body{
     align-items: center;
 }
 .vid video{
-    width: 1000px;
-    height: 600px ;
+    border: solid rred;
+    width: 95%;
+    margin: 2px;
+ 
     position: absolute;
 }
 video :focus{
